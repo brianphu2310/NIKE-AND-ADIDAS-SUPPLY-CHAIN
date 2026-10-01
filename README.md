@@ -96,7 +96,7 @@ Vietnam and Indonesia account for **~40% of all factories** and the majority of 
 ---
 
 ### Finding 2 — Adidas has a deliberate domestic manufacturing strategy; Nike does not
-Adidas maintains **3 factories in Germany** (Berlin, Munich, Herzogenaurach — its HQ city). Nike has zero European factories. Germany's cost index of 53–56 is the highest in the dataset, yet Adidas sustains this deliberately.
+Adidas maintains **3 factories in Germany** (Berlin, Munich, Herzogenaurach — its HQ city). Nike has zero European factories. Germany's cost index of 53–56 is the highest in the dataset (level with the USA), yet Adidas sustains this deliberately.
 
 **Implication:** These are likely **Speedfactory-adjacent** or premium-line facilities — where proximity to design teams, sustainability optics, and made-in-Germany positioning justify the cost premium. Nike's absence suggests a different brand architecture where "innovation" and "manufacturing" are geographically separated.
 
@@ -117,7 +117,7 @@ Adidas Surabaya leads the dataset at **80 units/worker/month**. Across the full 
 ---
 
 ### Finding 5 — China is a diminishing but not exited position
-Both brands have 3 factories in China — but cost (45–52) is significantly higher than Vietnam/Indonesia (32–46) with comparable or lower output. No brand has exited; both appear to maintain China for **market-proximity manufacturing** (selling into China) rather than export-oriented production.
+Both brands have 3 factories in China — but cost (45–52) is significantly higher than Vietnam/Indonesia (35–47) with comparable or lower output. No brand has exited; both appear to maintain China for **market-proximity manufacturing** (selling into China) rather than export-oriented production.
 
 **Implication:** The China+1 story is real, but it's a slow rebalancing rather than an exit. Brands need Chinese factories to serve Chinese consumers without import tariffs. Analysts should separate China-for-China from China-for-export in any risk model.
 
@@ -216,7 +216,7 @@ UPDATE factories SET
 
 ## Dataset
 
-**`nike_adidas.csv`** — 42 rows · 11 columns · 11 countries · 2023–2024
+**`data/nike_adidas_factories.csv`** — 42 rows · 11 columns · 11 countries · 2023–2024
 
 | Column | Type | Description |
 |---|---|---|
@@ -236,21 +236,28 @@ UPDATE factories SET
 ## Project Structure
 
 ```
-nike-adidas-supply-chain/
+NIKE-AND-ADIDAS-SUPPLY-CHAIN/
 ├── README.md
-├── SQL_DATASET.sql
-└── nike_adidas.csv
+├── data/
+│   └── nike_adidas_factories.csv    # 42 factories, the Tableau data source
+├── sql/
+│   └── nike_adidas_factories.sql    # Schema, data insert and analytical queries
+├── tests/
+│   └── test_dataset.py              # Data-quality checks (schema, nulls, ranges, CSV = SQL)
+└── .github/workflows/ci.yml         # Runs the checks on every push and PR
 ```
 
 ## How to Run
 
 ```bash
 psql -U postgres
-\i 'SQL_DATASET.sql'
-COPY factories TO '/tmp/nike_adidas.csv' DELIMITER ',' CSV HEADER;
+\i 'sql/nike_adidas_factories.sql'
+COPY factories TO '/tmp/nike_adidas_factories.csv' DELIMITER ',' CSV HEADER;
 ```
 
-Load `nike_adidas.csv` into Tableau Public → assign `latitude` and `longitude` as geographic roles → connect to dashboard template.
+Run the data-quality checks (optional): `pip install -r requirements-dev.txt && python -m pytest -q`
+
+Load `data/nike_adidas_factories.csv` into Tableau Public → assign `latitude` and `longitude` as geographic roles → connect to dashboard template.
 
 ---
 
