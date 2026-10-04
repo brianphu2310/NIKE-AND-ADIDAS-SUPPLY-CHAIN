@@ -1,0 +1,43 @@
+factory_code,brand,country,city,output_per_worker,overall_rank,brand_rank,percentile_rank
+NK-US-02,Nike,USA,Memphis,105.77,1,1,1.0
+AD-DE-03,Adidas,Germany,Herzogenaurach,104.44,2,1,0.976
+AD-DE-02,Adidas,Germany,Munich,101.92,3,2,0.951
+AD-DE-01,Adidas,Germany,Berlin,100.0,4,3,0.878
+AD-US-01,Adidas,USA,Portland,100.0,4,3,0.878
+NK-US-01,Nike,USA,Portland,100.0,4,2,0.878
+NK-KR-01,Nike,South Korea,Seoul,92.86,7,3,0.854
+AD-KR-01,Adidas,South Korea,Busan,91.18,8,5,0.829
+AD-VN-03,Adidas,Vietnam,Da Nang,90.91,9,6,0.805
+AD-JP-01,Adidas,Japan,Osaka,90.67,10,7,0.78
+NK-VN-04,Nike,Vietnam,Can Tho,90.0,11,4,0.756
+AD-VN-05,Adidas,Vietnam,Hai Phong,88.1,12,8,0.732
+NK-JP-01,Nike,Japan,Tokyo,87.5,13,5,0.707
+NK-VN-05,Nike,Vietnam,Hai Phong,86.36,14,6,0.683
+AD-TH-02,Adidas,Thailand,Chonburi,86.11,15,9,0.659
+AD-TH-01,Adidas,Thailand,Bangkok,85.29,16,10,0.634
+AD-ID-03,Adidas,Indonesia,Medan,85.0,17,11,0.61
+NK-TH-02,Nike,Thailand,Chonburi,84.21,18,7,0.585
+AD-VN-04,Adidas,Vietnam,Bien Hoa,84.0,19,12,0.561
+AD-CN-03,Adidas,China,Beijing,83.33,20,13,0.488
+NK-ID-03,Nike,Indonesia,Bandung,83.33,20,8,0.488
+NK-TH-01,Nike,Thailand,Bangkok,83.33,20,8,0.488
+NK-VN-03,Nike,Vietnam,Da Nang,82.76,23,10,0.463
+NK-CN-03,Nike,China,Suzhou,82.61,24,11,0.439
+AD-BR-01,Adidas,Brazil,Rio de Janeiro,82.11,25,14,0.415
+AD-ID-02,Adidas,Indonesia,Surabaya,80.0,26,15,0.366
+NK-BR-01,Nike,Brazil,Sao Paulo,80.0,26,12,0.366
+AD-ID-01,Adidas,Indonesia,Jakarta,78.79,28,16,0.317
+NK-ID-02,Nike,Indonesia,Surabaya,78.79,28,13,0.317
+NK-VN-02,Nike,Vietnam,Hanoi,78.57,30,14,0.293
+NK-ID-01,Nike,Indonesia,Jakarta,77.42,31,15,0.268
+AD-IN-01,Adidas,India,Bangalore,77.27,32,17,0.244
+AD-MX-01,Adidas,Mexico,Guadalajara,75.0,33,18,0.171
+AD-VN-02,Adidas,Vietnam,Hanoi,75.0,33,18,0.171
+NK-IN-01,Nike,India,Mumbai,75.0,33,16,0.171
+NK-CN-02,Nike,China,Guangzhou,74.07,36,17,0.146
+AD-CN-02,Adidas,China,Guangzhou,73.68,37,20,0.122
+NK-CN-01,Nike,China,Shanghai,73.33,38,18,0.073
+NK-MX-01,Nike,Mexico,Mexico City,73.33,38,18,0.073
+AD-CN-01,Adidas,China,Shanghai,72.73,40,21,0.049
+AD-VN-01,Adidas,Vietnam,Ho Chi Minh,71.88,41,22,0.024
+NK-VN-01,Nike,Vietnam,Ho Chi Minh,71.43,42,20,0.0

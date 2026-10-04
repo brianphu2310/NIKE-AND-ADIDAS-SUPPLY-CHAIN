@@ -233,6 +233,32 @@ UPDATE factories SET
 
 ---
 
+## Data Engineering
+
+Beyond the Tableau dashboard, the repo contains a small, tested ETL pipeline and a SQLite star schema built from the same CSV.
+
+```bash
+pip install -r requirements-dev.txt
+python -m pipeline            # extract -> validate -> transform -> load  (writes warehouse.db, docs/DATA_QUALITY.md)
+python -m pipeline.docgen     # regenerate docs/DATA_DICTIONARY.md from the warehouse
+python sql/run_queries.py     # run sql/analysis/*.sql -> docs/query_results/*.csv
+python -m pytest -q           # 38 tests: data quality, pipeline, queries, docs freshness
+```
+
+| Stage | What it does | Code |
+|---|---|---|
+| Extract | Reads the CSV; also parses the `INSERT` rows of the PostgreSQL script for reconciliation | `pipeline/extract.py` |
+| Validate | 31 checks (schema, nulls, duplicates, ranges, referential, consistency, outliers, CSV-vs-SQL); report written to [`docs/DATA_QUALITY.md`](docs/DATA_QUALITY.md); errors block the load | `pipeline/validate.py` |
+| Transform | Cleans, derives `output_per_worker`, `cost_index_per_million_units`, size/cost tiers; builds dimensions with surrogate keys | `pipeline/transform.py` |
+| Load | Creates `warehouse.db` (gitignored) from `pipeline/schema.sql`: `dim_` / `fact_` tables, FKs, indexes, a flat view | `pipeline/load.py` |
+
+- **Model:** [`docs/DATA_MODEL.md`](docs/DATA_MODEL.md) (Mermaid ER diagram, grain, keys) and [`docs/DATA_DICTIONARY.md`](docs/DATA_DICTIONARY.md) (every column, generated from the warehouse).
+- **Analysis SQL:** 10 SQLite queries in [`sql/analysis/`](sql/analysis/) using CTEs, window functions (`RANK`, `LAG`, `PERCENT_RANK`, running totals), self-joins and `CASE`; outputs committed in [`docs/query_results/`](docs/query_results/).
+- **Skills map:** [`docs/SKILLS_DEMONSTRATED.md`](docs/SKILLS_DEMONSTRATED.md).
+- **Honest scope:** each factory has one row with one reference year, so the model is a snapshot rather than a time series. The data is constructed from public information (see the note at the bottom), not audited company figures.
+
+---
+
 ## Project Structure
 
 ```
@@ -241,10 +267,13 @@ NIKE-AND-ADIDAS-SUPPLY-CHAIN/
 ├── data/
 │   └── nike_adidas_factories.csv    # 42 factories, the Tableau data source
 ├── sql/
-│   └── nike_adidas_factories.sql    # Schema, data insert and analytical queries
-├── tests/
-│   └── test_dataset.py              # Data-quality checks (schema, nulls, ranges, CSV = SQL)
-└── .github/workflows/ci.yml         # Runs the checks on every push and PR
+│   ├── nike_adidas_factories.sql    # Original PostgreSQL schema, data insert and queries
+│   ├── analysis/                    # 10 SQLite analytical queries (CTEs, window functions)
+│   └── run_queries.py               # Runs them and writes docs/query_results/*.csv
+├── pipeline/                        # ETL: extract, validate, transform, load (SQLite star schema)
+├── docs/                            # DATA_MODEL, DATA_DICTIONARY, DATA_QUALITY, SKILLS_DEMONSTRATED, query_results/
+├── tests/                           # Dataset, pipeline and query tests
+└── .github/workflows/ci.yml         # Tests, end-to-end pipeline run, docs-freshness check
 ```
 
 ## How to Run

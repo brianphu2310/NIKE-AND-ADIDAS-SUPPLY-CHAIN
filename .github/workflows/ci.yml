@@ -17,5 +17,12 @@ jobs:
           cache-dependency-path: requirements*.txt
       - name: Install dependencies
         run: pip install -r requirements-dev.txt
-      - name: Run tests
+      - name: Run tests (dataset, pipeline, SQL queries)
         run: python -m pytest -q
+      - name: Run the ETL pipeline and analysis queries end to end
+        run: |
+          python -m pipeline
+          python -m pipeline.docgen
+          python sql/run_queries.py
+      - name: Generated docs and query results must be committed and current
+        run: git diff --exit-code -- docs

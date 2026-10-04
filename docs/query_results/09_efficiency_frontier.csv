@@ -1,0 +1,9 @@
+factory_code,brand,country,city,output_per_worker,production_cost_index,frontier_factories_for_brand
+AD-TH-01,Adidas,Thailand,Bangkok,85.29,31.5,5
+AD-TH-02,Adidas,Thailand,Chonburi,86.11,32.5,5
+NK-VN-04,Nike,Vietnam,Can Tho,90.0,38.0,3
+AD-VN-03,Adidas,Vietnam,Da Nang,90.91,40.0,5
+AD-KR-01,Adidas,South Korea,Busan,91.18,45.0,5
+NK-KR-01,Nike,South Korea,Seoul,92.86,46.0,3
+AD-DE-03,Adidas,Germany,Herzogenaurach,104.44,53.0,5
+NK-US-02,Nike,USA,Memphis,105.77,56.0,3

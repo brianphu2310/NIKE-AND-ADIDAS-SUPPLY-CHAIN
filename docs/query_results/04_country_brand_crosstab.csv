@@ -1,0 +1,12 @@
+country,region,nike_factories,adidas_factories,nike_output,adidas_output,footprint_pattern
+Vietnam,Southeast Asia,5,5,10800000,10800000,Symmetric
+China,East Asia,3,3,6100000,4500000,Symmetric
+Indonesia,Southeast Asia,3,3,7000000,7100000,Symmetric
+Thailand,Southeast Asia,2,2,3100000,3000000,Symmetric
+Germany,Europe,0,3,0,1500000,Single-brand presence
+USA,North America,2,1,1050000,480000,Asymmetric
+Brazil,Latin America,1,1,800000,780000,Symmetric
+India,South Asia,1,1,900000,850000,Symmetric
+Japan,East Asia,1,1,700000,680000,Symmetric
+Mexico,Latin America,1,1,1100000,1050000,Symmetric
+South Korea,East Asia,1,1,650000,620000,Symmetric

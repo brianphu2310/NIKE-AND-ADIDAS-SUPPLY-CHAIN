@@ -1,0 +1,7 @@
+region,factories,total_output,avg_cost_index,cost_vs_mean_of_regions,output_per_worker,cheapest_rank
+South Asia,2,1750000,34.5,-10.53,76.09,1
+Latin America,4,3730000,39.0,-6.03,76.91,2
+Southeast Asia,20,41800000,39.65,-5.38,81.01,3
+East Asia,10,13250000,47.35,2.32,78.73,4
+Europe,3,1500000,54.67,9.64,102.04,5
+North America,3,1530000,55.0,9.97,102.0,6

@@ -1,0 +1,7 @@
+brand,size_tier,factories,pct_of_brand_factories,avg_cost_index,avg_output_per_worker
+Adidas,Large,5,22.7,44.06,77.93
+Adidas,Medium,10,45.5,38.65,81.74
+Adidas,Small,7,31.8,50.14,95.76
+Nike,Large,7,35.0,45.17,76.62
+Nike,Medium,9,45.0,37.94,82.02
+Nike,Small,4,20.0,51.25,96.53

@@ -1,0 +1,43 @@
+brand,factory_code,country,city,monthly_output,factory_rank,running_output,cumulative_share_pct
+Adidas,AD-ID-02,Indonesia,Surabaya,2800000,1,2800000,8.9
+Adidas,AD-ID-01,Indonesia,Jakarta,2600000,2,5400000,17.2
+Adidas,AD-VN-02,Vietnam,Hanoi,2550000,3,7950000,25.4
+Adidas,AD-VN-01,Vietnam,Ho Chi Minh,2300000,4,10250000,32.7
+Adidas,AD-VN-04,Vietnam,Bien Hoa,2100000,5,12350000,39.4
+Adidas,AD-VN-03,Vietnam,Da Nang,2000000,6,14350000,45.8
+Adidas,AD-VN-05,Vietnam,Hai Phong,1850000,7,16200000,51.7
+Adidas,AD-ID-03,Indonesia,Medan,1700000,8,17900000,57.1
+Adidas,AD-CN-01,China,Shanghai,1600000,9,19500000,62.2
+Adidas,AD-TH-02,Thailand,Chonburi,1550000,10,21050000,67.1
+Adidas,AD-CN-03,China,Beijing,1500000,11,22550000,71.9
+Adidas,AD-TH-01,Thailand,Bangkok,1450000,12,24000000,76.5
+Adidas,AD-CN-02,China,Guangzhou,1400000,13,25400000,81.0
+Adidas,AD-MX-01,Mexico,Guadalajara,1050000,14,26450000,84.3
+Adidas,AD-IN-01,India,Bangalore,850000,15,27300000,87.1
+Adidas,AD-BR-01,Brazil,Rio de Janeiro,780000,16,28080000,89.5
+Adidas,AD-JP-01,Japan,Osaka,680000,17,28760000,91.7
+Adidas,AD-KR-01,South Korea,Busan,620000,18,29380000,93.7
+Adidas,AD-DE-02,Germany,Munich,530000,19,29910000,95.4
+Adidas,AD-DE-01,Germany,Berlin,500000,20,30410000,97.0
+Adidas,AD-US-01,USA,Portland,480000,21,30890000,98.5
+Adidas,AD-DE-03,Germany,Herzogenaurach,470000,22,31360000,100.0
+Nike,NK-ID-02,Indonesia,Surabaya,2600000,1,2600000,8.1
+Nike,NK-VN-01,Vietnam,Ho Chi Minh,2500000,2,5100000,15.8
+Nike,NK-ID-01,Indonesia,Jakarta,2400000,3,7500000,23.3
+Nike,NK-VN-03,Vietnam,Da Nang,2400000,4,9900000,30.7
+Nike,NK-CN-01,China,Shanghai,2200000,5,12100000,37.6
+Nike,NK-VN-02,Vietnam,Hanoi,2200000,6,14300000,44.4
+Nike,NK-CN-02,China,Guangzhou,2000000,7,16300000,50.6
+Nike,NK-ID-03,Indonesia,Bandung,2000000,8,18300000,56.8
+Nike,NK-CN-03,China,Suzhou,1900000,9,20200000,62.7
+Nike,NK-VN-05,Vietnam,Hai Phong,1900000,10,22100000,68.6
+Nike,NK-VN-04,Vietnam,Can Tho,1800000,11,23900000,74.2
+Nike,NK-TH-02,Thailand,Chonburi,1600000,12,25500000,79.2
+Nike,NK-TH-01,Thailand,Bangkok,1500000,13,27000000,83.9
+Nike,NK-MX-01,Mexico,Mexico City,1100000,14,28100000,87.3
+Nike,NK-IN-01,India,Mumbai,900000,15,29000000,90.1
+Nike,NK-BR-01,Brazil,Sao Paulo,800000,16,29800000,92.5
+Nike,NK-JP-01,Japan,Tokyo,700000,17,30500000,94.7
+Nike,NK-KR-01,South Korea,Seoul,650000,18,31150000,96.7
+Nike,NK-US-02,USA,Memphis,550000,19,31700000,98.4
+Nike,NK-US-01,USA,Portland,500000,20,32200000,100.0

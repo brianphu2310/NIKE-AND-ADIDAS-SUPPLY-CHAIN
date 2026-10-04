@@ -1,0 +1,12 @@
+country,city,nike_factory,adidas_factory,nike_output_per_worker,adidas_output_per_worker,nike_cost_index,adidas_cost_index,more_efficient,lower_cost
+China,Guangzhou,NK-CN-02,AD-CN-02,74.07,73.68,49.5,45.0,Nike,Adidas
+China,Shanghai,NK-CN-01,AD-CN-01,73.33,72.73,52.0,48.0,Nike,Adidas
+Indonesia,Jakarta,NK-ID-01,AD-ID-01,77.42,78.79,41.0,43.5,Adidas,Nike
+Indonesia,Surabaya,NK-ID-02,AD-ID-02,78.79,80.0,43.5,45.0,Adidas,Nike
+Thailand,Bangkok,NK-TH-01,AD-TH-01,83.33,85.29,32.0,31.5,Adidas,Adidas
+Thailand,Chonburi,NK-TH-02,AD-TH-02,84.21,86.11,33.5,32.5,Adidas,Adidas
+USA,Portland,NK-US-01,AD-US-01,100.0,100.0,55.0,54.0,Tie,Adidas
+Vietnam,Da Nang,NK-VN-03,AD-VN-03,82.76,90.91,43.5,40.0,Adidas,Adidas
+Vietnam,Hai Phong,NK-VN-05,AD-VN-05,86.36,88.1,39.0,38.5,Adidas,Adidas
+Vietnam,Hanoi,NK-VN-02,AD-VN-02,78.57,75.0,41.2,46.8,Nike,Nike
+Vietnam,Ho Chi Minh,NK-VN-01,AD-VN-01,71.43,71.88,45.5,44.0,Adidas,Adidas

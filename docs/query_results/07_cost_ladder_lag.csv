@@ -1,0 +1,43 @@
+brand,factory_code,country,city,production_cost_index,next_cheaper_factory,next_cheaper_cost,step_up_vs_next_cheaper
+Adidas,AD-TH-01,Thailand,Bangkok,31.5,,,0.0
+Adidas,AD-TH-02,Thailand,Chonburi,32.5,AD-TH-01,31.5,1.0
+Adidas,AD-IN-01,India,Bangalore,34.0,AD-TH-02,32.5,1.5
+Adidas,AD-ID-03,Indonesia,Medan,35.0,AD-IN-01,34.0,1.0
+Adidas,AD-MX-01,Mexico,Guadalajara,36.0,AD-ID-03,35.0,1.0
+Adidas,AD-VN-05,Vietnam,Hai Phong,38.5,AD-MX-01,36.0,2.5
+Adidas,AD-VN-03,Vietnam,Da Nang,40.0,AD-VN-05,38.5,1.5
+Adidas,AD-BR-01,Brazil,Rio de Janeiro,41.0,AD-VN-03,40.0,1.0
+Adidas,AD-VN-04,Vietnam,Bien Hoa,41.0,AD-BR-01,41.0,0.0
+Adidas,AD-ID-01,Indonesia,Jakarta,43.5,AD-VN-04,41.0,2.5
+Adidas,AD-VN-01,Vietnam,Ho Chi Minh,44.0,AD-ID-01,43.5,0.5
+Adidas,AD-CN-02,China,Guangzhou,45.0,AD-VN-01,44.0,1.0
+Adidas,AD-ID-02,Indonesia,Surabaya,45.0,AD-CN-02,45.0,0.0
+Adidas,AD-KR-01,South Korea,Busan,45.0,AD-ID-02,45.0,0.0
+Adidas,AD-CN-03,China,Beijing,46.0,AD-KR-01,45.0,1.0
+Adidas,AD-VN-02,Vietnam,Hanoi,46.8,AD-CN-03,46.0,0.8
+Adidas,AD-JP-01,Japan,Osaka,47.0,AD-VN-02,46.8,0.2
+Adidas,AD-CN-01,China,Shanghai,48.0,AD-JP-01,47.0,1.0
+Adidas,AD-DE-03,Germany,Herzogenaurach,53.0,AD-CN-01,48.0,5.0
+Adidas,AD-US-01,USA,Portland,54.0,AD-DE-03,53.0,1.0
+Adidas,AD-DE-01,Germany,Berlin,55.0,AD-US-01,54.0,1.0
+Adidas,AD-DE-02,Germany,Munich,56.0,AD-DE-01,55.0,1.0
+Nike,NK-TH-01,Thailand,Bangkok,32.0,,,0.0
+Nike,NK-TH-02,Thailand,Chonburi,33.5,NK-TH-01,32.0,1.5
+Nike,NK-IN-01,India,Mumbai,35.0,NK-TH-02,33.5,1.5
+Nike,NK-MX-01,Mexico,Mexico City,37.0,NK-IN-01,35.0,2.0
+Nike,NK-ID-03,Indonesia,Bandung,38.0,NK-MX-01,37.0,1.0
+Nike,NK-VN-04,Vietnam,Can Tho,38.0,NK-ID-03,38.0,0.0
+Nike,NK-VN-05,Vietnam,Hai Phong,39.0,NK-VN-04,38.0,1.0
+Nike,NK-ID-01,Indonesia,Jakarta,41.0,NK-VN-05,39.0,2.0
+Nike,NK-VN-02,Vietnam,Hanoi,41.2,NK-ID-01,41.0,0.2
+Nike,NK-BR-01,Brazil,Sao Paulo,42.0,NK-VN-02,41.2,0.8
+Nike,NK-ID-02,Indonesia,Surabaya,43.5,NK-BR-01,42.0,1.5
+Nike,NK-VN-03,Vietnam,Da Nang,43.5,NK-ID-02,43.5,0.0
+Nike,NK-VN-01,Vietnam,Ho Chi Minh,45.5,NK-VN-03,43.5,2.0
+Nike,NK-KR-01,South Korea,Seoul,46.0,NK-VN-01,45.5,0.5
+Nike,NK-CN-03,China,Suzhou,47.0,NK-KR-01,46.0,1.0
+Nike,NK-JP-01,Japan,Tokyo,48.0,NK-CN-03,47.0,1.0
+Nike,NK-CN-02,China,Guangzhou,49.5,NK-JP-01,48.0,1.5
+Nike,NK-CN-01,China,Shanghai,52.0,NK-CN-02,49.5,2.5
+Nike,NK-US-01,USA,Portland,55.0,NK-CN-01,52.0,3.0
+Nike,NK-US-02,USA,Memphis,56.0,NK-US-01,55.0,1.0
