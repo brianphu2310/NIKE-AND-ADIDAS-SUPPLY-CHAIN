@@ -1,5 +1,6 @@
 """Tests that every analysis query runs and returns correct, expected results."""
 import importlib.util
+from io import StringIO
 import sqlite3
 from pathlib import Path
 
@@ -92,4 +93,4 @@ def test_head_to_head_pairs_only_shared_cities(results):
 def test_committed_csv_outputs_are_current(results):
     for name, df in results.items():
         committed = pd.read_csv(ROOT / "docs" / "query_results" / f"{name}.csv")
-        pd.testing.assert_frame_equal(committed, pd.read_csv(pd.io.common.StringIO(df.to_csv(index=False))))
+        pd.testing.assert_frame_equal(committed, pd.read_csv(StringIO(df.to_csv(index=False))))
