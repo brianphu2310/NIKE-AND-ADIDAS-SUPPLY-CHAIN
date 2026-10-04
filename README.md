@@ -86,6 +86,25 @@ This project follows the **Observe → Orient → Decide → Act** loop as a str
 
 ---
 
+## Power BI Dashboard
+
+The Tableau dashboard above is kept. The same data is also rebuilt in Power BI as a one-glance report for managers and HR: a summary line ("42 factories in 11 countries | 63.6M units a month | largest producer: Vietnam"), brand / region / country / size / cost-band filters, and plain-English chart titles ("Do cheaper factories make more?").
+
+<img src="docs/powerbi/nike-1.png" alt="Power BI dashboard page" width="900" />
+
+| Page | What it answers |
+|---|---|
+| Dashboard | Who makes more, monthly output vs cost, factories per country, one bubble map per brand |
+| Efficiency | Do bigger workforces make more, cheapest regions, most productive factories, country summary |
+| Factories | Every site, one row per factory |
+| About | Definitions, provenance and limits |
+
+- File: [`powerbi/nike_adidas_dashboard.pbix`](powerbi/nike_adidas_dashboard.pbix). All four pages: [`docs/powerbi/`](docs/powerbi/).
+- Model: star schema from the repo's ETL (`dim_brand`, `dim_country`, `dim_location`, `dim_factory`, `dim_year`, `fact_factory_snapshot`).
+- Limits: the dataset is constructed from public information, not audited company data. Each factory has one reference year, so this is a snapshot, not a trend. Cost index is relative, not a dollar amount. Maps are bubbles on longitude / latitude over a drawn outline.
+
+---
+
 ## Key Findings & Business Implications
 
 ### Finding 1 — Southeast Asia is non-negotiable for both brands

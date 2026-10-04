@@ -15,6 +15,6 @@ Every path below exists in this repo and is exercised by the tests or CI.
 | Reproducible query outputs | [`sql/run_queries.py`](../sql/run_queries.py), [`docs/query_results/`](query_results/) |
 | Testing (pytest: defect injection, determinism, query correctness vs pandas) | [`tests/test_pipeline.py`](../tests/test_pipeline.py), [`tests/test_queries.py`](../tests/test_queries.py), [`tests/test_dataset.py`](../tests/test_dataset.py) |
 | CI (tests, end-to-end run, generated-docs freshness gate) | [`.github/workflows/ci.yml`](../.github/workflows/ci.yml) |
-| BI / visualisation | Tableau dashboard linked from the [README](../README.md) (the workbook itself is not in the repo) |
+| BI / visualisation | Tableau dashboard linked from the [README](../README.md) (workbook not in the repo); Power BI report with DAX measures in [`powerbi/nike_adidas_dashboard.pbix`](../powerbi/nike_adidas_dashboard.pbix), previews in [`docs/powerbi/`](powerbi/) |
 
 Not claimed: no scraping or API ingestion, no orchestration tool, no cloud warehouse, no time-series modelling.
