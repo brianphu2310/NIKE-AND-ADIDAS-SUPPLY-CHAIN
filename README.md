@@ -4,7 +4,7 @@
 
 # Nike vs Adidas — Global Supply Chain Intelligence
 
-> **Competitive manufacturing analysis** | PostgreSQL · Tableau | 42 factories · 11 countries · 2 years
+> **Competitive manufacturing analysis** | PostgreSQL · Tableau · Power BI | 42 factories · 11 countries · 2 years
 
 <img width="1426" height="840" alt="image" src="https://github.com/user-attachments/assets/b8a795bc-d291-4fcc-857c-13b3b7dc3d0c" />
 
@@ -14,6 +14,18 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Brian%20Phu-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brian-phu-data-analysta55353390/)
 
 ---
+
+## At a glance
+
+[![CI](https://github.com/brianphu2310/NIKE-AND-ADIDAS-SUPPLY-CHAIN/actions/workflows/ci.yml/badge.svg)](https://github.com/brianphu2310/NIKE-AND-ADIDAS-SUPPLY-CHAIN/actions)
+
+| | |
+|---|---|
+| **Question** | Where do Nike and Adidas make their products, and how exposed is each brand to geographic concentration? |
+| **What I built** | PostgreSQL schema and queries over 42 factories in 11 countries, HHI concentration analysis, Tableau and Power BI dashboards. |
+| **Key results** | Vietnam and Indonesia hold about 40% of all factories (shared risk for both brands). Adidas keeps 3 factories in Germany; Nike has none in Europe. US plants are low-volume, high-efficiency sites rather than production hubs. |
+| **Proof** | CI green, 38 tests (data quality, pipeline, queries, docs freshness). |
+| **Honest limits** | The 42-row dataset is compiled, not scraped: the public factory pages returned no usable data, so no scraping is claimed. Cost is a normalised index, not audited financials. |
 
 ## The Business Problem
 
