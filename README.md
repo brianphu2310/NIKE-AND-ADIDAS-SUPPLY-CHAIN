@@ -10,6 +10,7 @@
 
 
 [![Tableau](https://img.shields.io/badge/Tableau-Live_Dashboard-purple?style=for-the-badge&logo=tableau&logoColor=white)](https://public.tableau.com/app/profile/brian.ma5935/viz/BrianNikeAdidas/Dashboard4)
+[![Power BI](https://img.shields.io/badge/Power_BI-Download_.pbix-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://github.com/brianphu2310/NIKE-AND-ADIDAS-SUPPLY-CHAIN/raw/main/powerbi/nike_adidas_dashboard.pbix)
 [![GitHub](https://img.shields.io/badge/GitHub-brianphu2310-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/brianphu2310)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Brian%20Phu-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brian-phu-data-analysta55353390/)
 
